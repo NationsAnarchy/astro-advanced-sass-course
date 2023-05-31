@@ -9,4 +9,5 @@
 
 @use "./components/button";
 
-@use "./pages/home";
+@use "./layouts/header";
+@use "./layouts/grid";
