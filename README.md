@@ -1,4 +1,4 @@
-# Advanced SASS Course by [Jonas.io](https://jonas.io) via [Udemy](https://www.udemy.com/course/advanced-css-and-sass/)! Thanks a lot!
+# Advanced SASS Course by [Jonas.io](https://codingheroes.io/) via [Udemy](https://www.udemy.com/course/advanced-css-and-sass/)! Thanks a lot!
 
 # Astro Starter Kit: Minimal
 
