@@ -12,7 +12,6 @@
 	@include mixins.clearfix;
 
 	[class^='col-'] {
-		background-color: lightgreen;
 		float: left;
 
 		&:not(:last-child) {

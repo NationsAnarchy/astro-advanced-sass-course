@@ -1,13 +1,16 @@
-@use "./base/base";
-@use "./base/typography";
-@use "./base/animations";
-@use "./base/utilities";
+@use './base/base';
+@use './base/typography';
+@use './base/animations';
+@use './base/utilities';
 
-@use "./abstracts/functions";
-@use "./abstracts/mixins";
-@use "./abstracts/variables";
+@use './abstracts/functions';
+@use './abstracts/mixins';
+@use './abstracts/variables';
 
-@use "./components/button";
+@use './components/button';
+@use './components/composition';
 
-@use "./layouts/header";
-@use "./layouts/grid";
+@use './layouts/header';
+@use './layouts/grid';
+
+@use './pages/home';
