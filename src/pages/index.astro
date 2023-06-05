@@ -6,6 +6,10 @@ import whiteLogo from "../img/logo-white.png";
 import naturalPic1 from "../img/nat-1.jpg";
 import naturalPic2 from "../img/nat-2.jpg";
 import naturalPic3 from "../img/nat-3.jpg";
+import img8 from "../img/nat-8.jpg";
+import img9 from "../img/nat-9.jpg";
+import mp4vid from "../img/video.mp4";
+import webmVid from "../img/video.webm";
 ---
 
 <html lang="en">
@@ -227,6 +231,63 @@ import naturalPic3 from "../img/nat-3.jpg";
 
         <div class="text-center m-t-lg">
           <a class="btn btn--green" href="#">discover our tours</a>
+        </div>
+      </section>
+
+      <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src={mp4vid} type="video/mp4" />
+            <source src={webmVid} type="video/webm" />
+          </video>
+        </div>
+
+        <div class="text-center m-b-lg">
+          <h2 class="heading-secondary">We make people genuinely happy</h2>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img src={img8} alt="story image" class="story__image" />
+              <figcaption class="story__caption">Mary Smith</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary">
+                I had the best week ever with my loved ones
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                odit unde facere excepturi perferendis alias, aspernatur, fugit
+                commodi totam inventore possimus earum libero nihil non omnis!
+                Exercitationem velit ipsa aspernatur.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="story">
+            <figure class="story__shape">
+              <img src={img9} alt="story image" class="story__image" />
+              <figcaption class="story__caption">Jack Wilson</figcaption>
+            </figure>
+            <div class="story__text">
+              <h3 class="heading-tertiary">
+                Wow my life is completely different now
+              </h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                odit unde facere excepturi perferendis alias, aspernatur, fugit
+                commodi totam inventore possimus earum libero nihil non omnis!
+                Exercitationem velit ipsa aspernatur.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="" class="btn-text"> Read all stories &rarr;</a>
         </div>
       </section>
     </main>
