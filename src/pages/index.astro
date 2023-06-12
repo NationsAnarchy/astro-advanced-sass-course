@@ -39,19 +39,19 @@ import greenLogo from "../img/logo-green-2x.png";
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="" class="navigation__link">About Natours</a>
+            <a href="#about" class="navigation__link">About Natours</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Your benefits</a>
+            <a href="#features" class="navigation__link">Your benefits</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Popular tours</a>
+            <a href="#section-tours" class="navigation__link">Popular tours</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Stories</a>
+            <a href="#stories" class="navigation__link">Stories</a>
           </li>
           <li class="navigation__item">
-            <a href="" class="navigation__link">Book now</a>
+            <a href="#booking" class="navigation__link">Book now</a>
           </li>
         </ul>
       </nav>
@@ -67,12 +67,14 @@ import greenLogo from "../img/logo-green-2x.png";
           <span class="heading-primary--main">outdoors</span>
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
-        <a class="btn btn--white btn--animated" href="#">discover our tours</a>
+        <a class="btn btn--white btn--animated" href="#section-tours">
+          discover our tours
+        </a>
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="text-center m-b-lg">
           <h2 class="heading-secondary">
             Exciting tours for adventurous people
@@ -121,7 +123,7 @@ import greenLogo from "../img/logo-green-2x.png";
         </div>
       </section>
 
-      <section class="section-features">
+      <section class="section-features" id="features">
         <div class="row">
           <div class="col-1-of-4">
             <div class="feature-box">
@@ -166,7 +168,7 @@ import greenLogo from "../img/logo-green-2x.png";
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="text-center m-b-lg">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -196,7 +198,7 @@ import greenLogo from "../img/logo-green-2x.png";
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -227,7 +229,7 @@ import greenLogo from "../img/logo-green-2x.png";
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -258,7 +260,7 @@ import greenLogo from "../img/logo-green-2x.png";
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="" class="btn btn--white">Book now!</a>
+                  <a href="#popup" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -270,7 +272,7 @@ import greenLogo from "../img/logo-green-2x.png";
         </div>
       </section>
 
-      <section class="section-stories">
+      <section class="section-stories" id="stories">
         <div class="bg-video">
           <video class="bg-video__content" autoplay muted loop>
             <source src={mp4vid} type="video/mp4" />
@@ -327,7 +329,7 @@ import greenLogo from "../img/logo-green-2x.png";
         </div>
       </section>
 
-      <section class="section-booking">
+      <section class="section-booking" id="booking">
         <div class="row">
           <div class="booking">
             <div class="booking__form">
@@ -425,11 +427,44 @@ import greenLogo from "../img/logo-green-2x.png";
           <p class="footer__copyright">
             Coded by Phúc (Scott) Nguyễn. A special thanks to <a
               href="https://codingheroes.io/"
-              class="footer__link">Jonas Schmedtmann aka Jonas.io</a
+              class="footer__link"
+              >Jonas Schmedtmann aka Jonas.io (now Codingheroes.io)</a
             > for his amazing learning courses and web development + design resources.
           </p>
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src={img8} alt="Tour photo" class="popup__img" />
+          <img src={img9} alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary m-b-sm">Start booking now</h2>
+          <h3 class="heading-tertiary m-b-sm">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            aliquid, repellendus laborum, numquam accusamus corrupti adipisci
+            fugit dignissimos eius provident asperiores sequi explicabo
+            voluptatibus velit at unde aut fuga officiis iusto odio ex
+            consequatur eaque omnis? Repudiandae quis quos veritatis cupiditate
+            rerum ducimus dolore doloremque optio, pariatur vitae beatae
+            distinctio tempora similique, quas alias? Consectetur aperiam
+            provident soluta facilis deserunt sed recusandae reiciendis
+            temporibus, possimus at corporis accusantium enim quidem culpa
+            labore harum quos aut omnis modi ipsa et! Perspiciatis tempora
+            molestias fugit corrupti alias temporibus ad placeat voluptates
+            ipsam eligendi, exercitationem nobis quaerat? Commodi id vel ea
+            repellat placeat.
+          </p>
+          <a href="#" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
