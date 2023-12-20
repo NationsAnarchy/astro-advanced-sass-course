@@ -1,9 +1,14 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .section-about {
   background-color: variables.$color-grey-light-1;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include mixins.responsive(tablet-portrait) {
+    padding: 20rem 0;
+  }
 }
 
 .section-features {
@@ -21,18 +26,30 @@
   & > * {
     transform: skewY(7deg);
   }
+
+  @include mixins.responsive(tablet-portrait) {
+    padding: 10rem 0;
+  }
 }
 
 .section-tours {
   background-color: variables.$color-grey-light-1;
-  padding: 25rem 0 10rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
+
+  @include mixins.responsive(tablet-portrait) {
+    padding: 20rem 0 10rem 0;
+  }
 }
 
 .section-stories {
   position: relative;
   padding: 15rem 0;
   // background-color: variables.$color-grey-light-1;
+
+  @include mixins.responsive(tablet-portrait) {
+    padding: 10rem 0;
+  }
 }
 
 .section-booking {
@@ -52,14 +69,40 @@
       transparent 50%
     ),
     url(../img/nat-10.jpg);
-  background-size: cover;
+  background-size: 100%;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.2);
 
-  height: 60rem;
+  @include mixins.responsive(tablet-landscape) {
+    background-image: linear-gradient(
+        110deg,
+        rgba(variables.$color-white, 0.9) 0%,
+        rgba(variables.$color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+    background-size: cover;
+  }
+
+  @include mixins.responsive(tablet-portrait) {
+    background-image: linear-gradient(
+        to right,
+        rgba(variables.$color-white, 0.9) 0%,
+        rgba(variables.$color-white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
 
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include mixins.responsive(tablet-landscape) {
+      width: 65%;
+    }
+
+    @include mixins.responsive(tablet-portrait) {
+      width: 100%;
+    }
   }
 }

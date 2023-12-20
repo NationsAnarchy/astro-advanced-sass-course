@@ -1,5 +1,5 @@
 @use "../abstracts/variables";
-@use "../base/mixins";
+@use "../abstracts/mixins";
 
 .row {
   max-width: variables.$grid-width;
@@ -7,6 +7,15 @@
 
   &:not(:last-child) {
     margin-bottom: variables.$gutter-vertical;
+
+    @include mixins.responsive(tablet-portrait) {
+      margin-bottom: variables.$gutter-vertical-small;
+    }
+  }
+
+  @include mixins.responsive(tablet-portrait) {
+    max-width: 50rem;
+    padding: 0 3rem;
   }
 
   @include mixins.clearfix;
@@ -16,6 +25,15 @@
 
     &:not(:last-child) {
       margin-right: variables.$gutter-horizontal;
+
+      @include mixins.responsive(tablet-portrait) {
+        margin-right: 0;
+        margin-bottom: variables.$gutter-vertical-small;
+      }
+    }
+
+    @include mixins.responsive(tablet-portrait) {
+      width: 100% !important;
     }
   }
 

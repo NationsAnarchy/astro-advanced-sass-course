@@ -4,3 +4,39 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// MEDIA QUERIES
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media (width <= 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-portrait {
+    @media (width <= 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet-landscape {
+    @media (width <= 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media (width >= 112.5em) {
+      @content;
+    }
+  }
+}
