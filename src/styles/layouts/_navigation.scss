@@ -45,13 +45,13 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.87, 1);
 
     @include mixins.responsive(tablet-portrait) {
-      top: 4.5rem;
+      top: 4rem;
       right: 4.5rem;
     }
 
     @include mixins.responsive(phone) {
       top: 3rem;
-      right: 3rem;
+      right: 3.5rem;
     }
   }
 

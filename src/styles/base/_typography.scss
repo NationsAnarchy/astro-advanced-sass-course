@@ -62,15 +62,11 @@ body {
 
   @include mixins.responsive(tablet-portrait) {
     font-size: 3rem;
+    margin-top: 4rem;
   }
 
   @include mixins.responsive(phone) {
     font-size: 2.5rem;
-  }
-
-  &:hover {
-    transform: skewX(15deg) skewY(2deg) scale(1.15);
-    text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);
   }
 }
 
