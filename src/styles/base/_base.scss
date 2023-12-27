@@ -1,0 +1,33 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include mixins.responsive(tablet-landscape) {
+    font-size: 56.25%;
+  }
+
+  @include mixins.responsive(tablet-portrait) {
+    font-size: 50%;
+  }
+
+  @include mixins.responsive(desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include mixins.responsive(tablet-portrait) {
+    padding: 0;
+  }
+}

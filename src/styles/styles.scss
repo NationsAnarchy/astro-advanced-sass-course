@@ -1,7 +1,24 @@
-h1 {
-  color: blue
-}
+@use "./base/base";
+@use "./base/typography";
+@use "./base/animations";
+@use "./base/utilities";
 
-p {
-  color: red
-}
+@use "./abstracts/functions";
+@use "./abstracts/mixins";
+@use "./abstracts/variables";
+
+@use "./components/button";
+@use "./components/composition";
+@use "./components/feature-box";
+@use "./components/card";
+@use "./components/story";
+@use "./components/bg-video";
+@use "./components/form";
+@use "./components/popup";
+
+@use "./layouts/header";
+@use "./layouts/footer";
+@use "./layouts/grid";
+@use "./layouts/navigation";
+
+@use "./pages/home";
